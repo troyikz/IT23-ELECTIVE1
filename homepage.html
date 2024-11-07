@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogie pedia</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-top: 50px;
+            color: rgb(18, 10, 10);
+        }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            text-align: right;
+        }
+
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: rgb(18, 10, 10);
+            font-size: 1.2em;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-top: 100px;
+            padding: 20px;
+        }
+
+        .card {
+            width: 250px;
+            margin: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .card h3 {
+            margin: 10px 0;
+            font-size: 1.4em;
+            color: #333;
+        }
+
+        .card p {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .card button {
+            background-color: #008cba;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .card button:hover {
+            background-color: #005f7f;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="homepage.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="index.html">Logout</a>
+    </div>
+
+    <h1>Dogie pedia</h1>
+    
+    <div class="container">
+        <!-- Card 1: Bulldog -->
+        <div class="card" style="background-color: #FFCDD2;">
+            <img src="https://imgs.search.brave.com/APGW9xodNZzyEf4A16doRuY_UVtQQmcl-BqMER2qlZA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNC8x/Mi8xMC8wNS81MC9l/bmdsaXNoLWJ1bGxk/b2ctNTYyNzIzXzY0/MC5qcGc" alt="Bulldog">
+            <div class="card-content">
+                <h3>Bulldog</h3>
+                <p>The Bulldog is a muscular and hefty dog with a distinctive wrinkled face. Known for their gentle temperament, Bulldogs make great companions for families.</p>
+                <button onclick="window.open('https://en.wikipedia.org/wiki/Bulldog', '_blank')">Learn More</button>
+            </div>
+        </div>
+
+        <!-- Card 2: Golden Retriever -->
+        <div class="card" style="background-color: #FFF9C4;">
+            <img src="https://imgs.search.brave.com/wMYx6-KGlufxCweiBMSyqwKFrCxR7DYc6FXdjruwqMI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTA2/NzU2MzAzL3Bob3Rv/L2dvbGRlbi1yZXRy/aWV2ZXIuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPWxTbEk4/UVR1dFNrNnFpNW95/ekJwRFNRSEphcEdf/cVpvUVVqaFFwRW9X/VVE9" alt="Golden Retriever">
+            <div class="card-content">
+                <h3>Golden Retriever</h3>
+                <p>Golden Retrievers are friendly, intelligent, and devoted. They are known for their loyalty and are great family dogs, excelling in obedience and therapy work.</p>
+                <button onclick="window.open('https://en.wikipedia.org/wiki/Golden_Retriever', '_blank')">Learn More</button>
+            </div>
+        </div>
+
+        <!-- Card 3: Poodle -->
+        <div class="card" style="background-color: #BBDEFB;">
+            <img src="https://imgs.search.brave.com/yVR1riMv1PC_unFjsTdLC6BTCmcepwxW2dKLWBrPNbM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAwLzY3Lzk4Lzky/LzM2MF9GXzY3OTg5/Mjk4X1Yyb1lMTnpJ/enNiTG11ODdWY1B4/elFieHpDWTlsN2Y3/LmpwZw" alt="Poodle">
+            <div class="card-content">
+                <h3>Poodle</h3>
+                <p>Poodles are known for their curly coat and high intelligence. They come in different sizes and are often seen as excellent therapy dogs due to their temperament.</p>
+                <button onclick="window.open('https://en.wikipedia.org/wiki/Poodle', '_blank')">Learn More</button>
+            </div>
+        </div>
+
+        <!-- Card 4: Beagle -->
+        <div class="card" style="background-color: #C8E6C9;">
+            <img src="https://imgs.search.brave.com/cSfsdb8yNLYm4NbZVm3eyZIe_bwYG2TYqwVdG7BngXE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTE5/MDExMzM1L3Bob3Rv/L2JlYWdsZS1wdXBw/eS5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9R0xCRnJZRFY5/a0lFaC12MlBIcHZa/ODRZNmFqczU4VXhr/WFZEVmNrMmczUT0" alt="Beagle">
+            <div class="card-content">
+                <h3>Beagle</h3>
+                <p>The Beagle is a small to medium-sized breed known for its keen sense of smell and love of exploration. They are friendly, curious, and great with kids.</p>
+                <button onclick="window.open('https://en.wikipedia.org/wiki/Beagle', '_blank')">Learn More</button>
+            </div>
+        </div>
+
+        <!-- Card 5: German Shepherd -->
+        <div class="card" style="background-color: #D1C4E9;">
+            <img src="https://imgs.search.brave.com/Dd-efisEnZnNkPeg2BfpTY8OtSkafNkAfjdHRb58rYc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQ3/NzA5MDk4OC9waG90/by9nZXJtYW4tc2hl/cGhlcmQuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPVlWck1x/Tl9rX0RERTFDTHE5/QVZiYVJoWU1ZZmFI/WGxtbl9IcTFHZXBE/WFU9" alt="German Shepherd">
+            <div class="card-content">
+                <h3>German Shepherd</h3>
+                <p>German Shepherds are courageous, confident, and versatile dogs. They are often used in police work, search-and-rescue, and as loyal family pets.</p>
+                <button onclick="window.open('https://en.wikipedia.org/wiki/German_Shepherd', '_blank')">Learn More</button>
+            </div>
+        </div>
+
+        <!-- Card 6: Dachshund -->
+        <div class="card" style="background-color: #FFE0B2;">
+            <img src="https://imgs.search.brave.com/St4iAD92mJb2N4zZySlobCnd2u5MtSZRKobMo_ey8WQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTM1/ODc1NDQ2Ni9waG90/by9kYWNoc2h1bmQt/ZG9nLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz14QTV0NzFx/LU9IaEZOZDlaUDB1/YmhPcTV1ZVJRVlBa/SUV1aTNHRHUyUGdZ/PQ" alt="Dachshund">
+            <div class="card-content">
+                <h3>Dachshund</h3>
+                <p>Dachshunds are small but confident dogs known for their long bodies and short legs. They are lively and enjoy digging and exploring.</p>
+                <button onclick="window.open('https://en.wikipedia.org/wiki/Dachshund', '_blank')">Learn More</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
